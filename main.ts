@@ -9,8 +9,8 @@ basic.clearScreen()
 basic.showIcon(IconNames.Skull)
 
 // variables
-const firstNumber = randint(0, 99)
-const secondNumber = randint(0, 99)
+const firstNumber: number = randint(0, 99)
+const secondNumber: number = randint(0, 99)
 
 // show 1st number
 input.onButtonPressed(Button.A, function () {
