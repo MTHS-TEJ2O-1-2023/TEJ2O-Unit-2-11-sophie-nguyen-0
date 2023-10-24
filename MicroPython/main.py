@@ -17,7 +17,7 @@ first_number = randint(0, 99)
 second_number = randint(0, 99)
 
 while True:
-    #show first number
+    # show first number
     if button_a.is_pressed():
         display.clear
         display.scroll("1 : " + str(first_number))
