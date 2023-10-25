@@ -32,8 +32,7 @@ while True:
         display.show(Image.GHOST)
 
     # compare both numbers
-    gesture = accelerometer.current_gesture()
-    if gesture == "shake":
+    if accelerometer.was_gesture("shake"):
         display.clear
         if first_number > second_number:
             display.scroll(str(first_number) + ">" + str(second_number))
