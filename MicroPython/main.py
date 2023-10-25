@@ -7,15 +7,16 @@ This module is a Micro:bit MicroPython program generates 2 random numbers and sh
 from microbit import *
 from random import *
 
-
-display.clear
-display.show(Image.SKULL)
-sleep(1000)
-
 # variables
 first_number = randint(0, 99)
 second_number = randint(0, 99)
 
+# setup
+display.clear
+display.show(Image.SKULL)
+sleep(1000)
+
+# loop
 while True:
     # show first number
     if button_a.is_pressed():
